@@ -1,1 +1,5 @@
-echo "testing tmux-titles.sh"
+__tmux_title() {
+
+  echo "testing tmux-titles.sh"
+
+}

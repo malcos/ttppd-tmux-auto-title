@@ -30,6 +30,17 @@ source testing.sh
 
 A testing `$PS1` will be configured and you should see the title of your current tmux window change. Go and browse your filesystem.
 
+## Installing
+
+- Copy file into your home folder and source it from your rc file
+- Add `$(__tmux_title)` somewhere in your `$PS1`
+
+For example
+
+```Shell
+export PS1="$(__tmux_title)[\u@\h]\$"
+```
+
 ## Options
 
 - TODO

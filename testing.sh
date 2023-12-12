@@ -1,3 +1,2 @@
-export PS1="[\u@\h \W]\$"
-echo "Loading tmux-titles.sh"
 source tmux-titles.sh
+export PS1="$(__tmux_title)[\u@\h]\$"
