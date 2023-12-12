@@ -40,7 +40,3 @@ For example
 ```Shell
 export PS1="$(__tmux_title)[\u@\h]\$"
 ```
-
-## Options
-
-- TODO
