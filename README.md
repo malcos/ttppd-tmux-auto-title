@@ -37,7 +37,7 @@ A testing `$PS1` will be configured and you should see the title of your current
 For example
 
 ```Shell
-source tmux-titles.sh
+source ~/tmux-titles.sh
 export PS1='$(__tmux_title)[\u@\h]\$ '
 ```
 
