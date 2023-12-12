@@ -22,7 +22,13 @@ __tmux_title() {
     "DIR")
       path=$(basename "$pwd");;
     "PARENT")
-      path=$(basename "$(dirname "$pwd")")/$(basename "$pwd");;
+      if [ $pwd = "~" ]; then
+        path=$pwd
+      elif [  $(basename "$(dirname "$pwd")") = "/" ]; then
+        path=$pwd
+      else
+        path=$(basename "$(dirname "$pwd")")/$(basename "$pwd")
+      fi;;
     "PWD")
       path=$pwd;;
     *)
