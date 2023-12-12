@@ -6,7 +6,6 @@ The script automatically names your tmux tab using the following rules:
 
 - When in a git project
   - Use the name as specified in the of the origin
-  - Optionally add current folder name
 - Otherwise
   - current directory name
   - current parent and directory name
@@ -14,7 +13,7 @@ The script automatically names your tmux tab using the following rules:
 
 ## Testing
 
-You can test the script without making any modifications in your current `$PS1` as spacified in your rc file.
+You can test the script without making any modifications in your current `$PS1` as specified in your rc file.
 
 Start tmux/byobu and type
 
@@ -32,12 +31,13 @@ A testing `$PS1` will be configured and you should see the title of your current
 
 ## Installing
 
-- Copy file into your home folder and source it from your rc file
+- Copy file `tmux-titles.sh` into your home folder and source it from your rc file
 - Add `$(__tmux_title)` somewhere in your `$PS1`
 
 For example
 
 ```Shell
+source tmux-titles.sh
 export PS1='$(__tmux_title)[\u@\h]\$ '
 ```
 
