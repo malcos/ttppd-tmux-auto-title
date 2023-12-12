@@ -38,5 +38,20 @@ A testing `$PS1` will be configured and you should see the title of your current
 For example
 
 ```Shell
-export PS1="$(__tmux_title)[\u@\h]\$"
+export PS1='$(__tmux_title)[\u@\h]\$ '
 ```
+
+## Options
+
+You can use the following functions from terminal in order to change the behavior of the script
+
+- `ttdir`: automatically set the title to the current directory name
+- `ttparent`: automatically set the title to using the two last directories in the current path.
+- `ttpwd`: automatically set the title to the present working directory
+- `ttoff`: disable automatic titles and reset current title
+- `ttset`: disable automatic titles and set current title to the specified first argument
+
+## Improvements
+
+- Option to disable git project detection
+- Option to add relative path to current git project name
