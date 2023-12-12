@@ -5,8 +5,7 @@ ifneq ($(TTPPD_TEST),1)
 test-bash:
 	export TTPPD_TEST=1
 	bash --rcfile testing.sh -i
-endif
-
+else
 .ONESHELL:
 already-testing:
 	@echo ""
@@ -15,3 +14,4 @@ already-testing:
 	@echo "type "exit" or press CTRL+D to return to your normal terminal"
 	@echo ""
 	@echo ""
+endif
